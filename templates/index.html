@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title%} Home Page {% endblock %}
+{% block content%}
+<h1>Welcome to our website</h1>
+    <br>
+    <p>{% for x in content%}</p>
+        <p>{{x}}</p>
+    {% endfor %}
+    <br>
+    <p>{{cheese}}</p>
+    <br>
+    {% for x in range(5, 9) %}
+        <p>{{x}}</p>
+    {% endfor %}
+    <p style="color: turquoise;">My boot scootin' baby is drivin' me crazy<br>My obsession from a Western, my dance floor date<br>My rodeo Romeo, a cowboy god from head to toe<br>Wanna make you mine, better get in line </p>
+    {% for x in range (5, 9) %}
+        <p>{{x}}<p>
+    {% endfor %}
+{% endblock %}
